@@ -1,0 +1,12 @@
+donacion | CREATE TABLE `donacion` (
+  `idDonacion` int(11) NOT NULL AUTO_INCREMENT,
+  `objeto` varchar(45) NOT NULL,
+  `descripcion` varchar(255) NOT NULL,
+  `donante` varchar(45) NOT NULL,
+  `estado` varchar(45) NOT NULL,
+  `direccion` varchar(45) NOT NULL,
+  `ciudad` varchar(45) NOT NULL,
+  `disponible` tinyint(1) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  PRIMARY KEY (`idDonacion`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4
