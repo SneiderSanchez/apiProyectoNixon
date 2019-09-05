@@ -4,6 +4,7 @@ const app = express();
 const http = require("http").Server(app);
 const donanteRouter = require("./routes/donante");
 const donationRouter = require("./routes/donation");
+const fundationRouter = require("./routes/fundacion");
 const { port } = require("./config");
 
 app.use(bodyParser.json());
@@ -20,4 +21,5 @@ app.use((req, res, next) => {
 )
 
 app.use("/api/donante", donanteRouter);
+app.use("/api/fundacion", fundationRouter);
 app.use("/api/donacion", donationRouter);
